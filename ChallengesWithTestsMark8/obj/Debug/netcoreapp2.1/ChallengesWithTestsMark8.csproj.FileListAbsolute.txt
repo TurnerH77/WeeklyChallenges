@@ -46,7 +46,6 @@ C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\Chal
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\netcoreapp2.1\ChallengesWithTestsMark8.runtimeconfig.dev.json
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\netcoreapp2.1\ChallengesWithTestsMark8.dll
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\netcoreapp2.1\ChallengesWithTestsMark8.pdb
-C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.csprojAssemblyReference.cache
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.AssemblyInfoInputs.cache
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.AssemblyInfo.cs
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.csproj.CoreCompileInputs.cache
