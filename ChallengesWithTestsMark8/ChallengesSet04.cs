@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Diagnostics.Tracing;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 
 namespace ChallengesWithTestsMark8
 {
@@ -6,47 +11,173 @@ namespace ChallengesWithTestsMark8
     {
         public int AddEvenSubtractOdd(int[] numbers)
         {
-            throw new NotImplementedException();
+            int num = 0;
+            
+            foreach (var item in numbers)
+            {
+                if(item % 2 == 0)
+                {
+                    num += item;
+                }
+                else
+                {
+                    num -= item;
+                }
+            }
+            return num;
+            
         }
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            throw new NotImplementedException();
+            int num1 = 0;
+            int num2 = 0;
+            int num3 = 0;
+            int num4 = 0;
+            foreach (var item in str1)
+            {
+                num1++;
+            }
+            foreach (var item in str2)
+            {
+                num2++;
+            }
+            foreach (var item in str3)
+            {
+                num3++;
+            }
+            foreach (var item in str4)
+            {
+                num4++;
+            }
+            int max1 = Math.Min(num1, num2);
+            int max2 = Math.Min(num3, num4);
+            return Math.Min(max1, max2);
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
         {
-            throw new NotImplementedException();
+            int max1 = Math.Min(number1, number2);
+            int max2 = Math.Min(number3, number4);
+            return Math.Min(max1, max2);
         }
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            throw new NotImplementedException();
+            biz.Name = "TrueCoders";
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            throw new NotImplementedException();
+            double sL1 = Math.Sqrt(sideLength1);
+            double sL2 = Math.Sqrt(sideLength2);
+            double sL3 = Math.Sqrt(sideLength3);
+            if(sL1 == 0 || sL2 == 0 || sL3 == 0)
+            {
+                return false;
+            }
+            else if(sL1 + sL2 == sL3)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         public bool IsStringANumber(string input)
         {
-            throw new NotImplementedException();
+            if(input== null || input == "")
+            {
+                return false;
+            }
+
+            if(input.Any(x => char.IsLetter(x)))
+            {
+                return false;
+            }
+            else if(input.Any(x => char.IsSymbol(x)))
+            {
+                return true;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            throw new NotImplementedException();
+            int nullNum = 0;
+            int notNull = 0;
+            foreach (var item in objs)
+            {
+                if(item == null)
+                {
+                    nullNum++;
+                }
+                else
+                {
+                    notNull++;
+                }
+            }
+
+            if(nullNum > notNull)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public double AverageEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            double evens = 0;
+            int count = 0;
+            foreach (var item in numbers)
+            {
+                if(item % 2 == 0)
+                {
+                    evens += item;
+                    count++;
+                }
+            }
+            if(count <= 0)
+            {
+                return 0;
+            }
+            else if (numbers == null)
+            {
+                return 0;
+            }
+            else
+            {
+            return evens / count;
+
+            }
         }
 
         public int Factorial(int number)
         {
-            throw new NotImplementedException();
+            int res = 1;
+            if (number == 0)
+            {
+                return 1;
+            }
+            if(number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            while(number != 1)
+            {
+                res = res * number;
+                number = number - 1;
+            }
+            return res;
         }
     }
 }

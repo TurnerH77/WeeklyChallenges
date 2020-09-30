@@ -52,3 +52,4 @@ C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\Chal
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.dll
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.pdb
 C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.genruntimeconfig.cache
+C:\Users\turne\Documents\TrueCoders\repos\WeeklyChallenges\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.csprojAssemblyReference.cache
