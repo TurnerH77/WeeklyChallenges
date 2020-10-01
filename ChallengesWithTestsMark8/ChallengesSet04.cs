@@ -69,43 +69,29 @@ namespace ChallengesWithTestsMark8
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            double sL1 = Math.Sqrt(sideLength1);
-            double sL2 = Math.Sqrt(sideLength2);
-            double sL3 = Math.Sqrt(sideLength3);
-            if(sL1 == 0 || sL2 == 0 || sL3 == 0)
-            {
-                return false;
-            }
-            else if(sL1 + sL2 == sL3)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            bool a = sideLength1 + sideLength2 > sideLength3;
+            bool b = sideLength1 + sideLength3 > sideLength2;
+            bool c = sideLength2 + sideLength3 > sideLength1;
+
+            return a && b && c;
 
         }
 
         public bool IsStringANumber(string input)
         {
-            if(input== null || input == "")
+            if(input == null || input == "")
             {
                 return false;
             }
-
-            if(input.Any(x => char.IsLetter(x)))
+            else if(input.Any(x => char.IsLetter(x)) || input.Contains('*') || input.Contains('#'))
             {
                 return false;
-            }
-            else if(input.Any(x => char.IsSymbol(x)))
-            {
-                return true;
             }
             else
             {
-                return true;
+            return (input.Any(x => char.IsSymbol(x)) || input.Any(x => char.IsNumber(x)));
             }
+            
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
@@ -138,6 +124,12 @@ namespace ChallengesWithTestsMark8
         {
             double evens = 0;
             int count = 0;
+
+            if(numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+
             foreach (var item in numbers)
             {
                 if(item % 2 == 0)
@@ -157,7 +149,6 @@ namespace ChallengesWithTestsMark8
             else
             {
             return evens / count;
-
             }
         }
 
